@@ -5,3 +5,30 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+ArtCar.create([
+	{ 
+		name: 'Pyrobar', 
+		hometown: 'Santa Barbara, CA', 
+		power_source: 'Gasoline',
+		flame_effects: true,
+		street_legal: true,
+		photo_url: 'pyrobar.jpg'
+	},
+	{
+		name: 'The Nautilus',
+		hometown: 'San Francisco, CA', 
+		power_source: 'Diesel',
+		flame_effects: false,
+		street_legal: false,
+		photo_url: 'nautilus.jpg'
+	},
+	# {
+	# 	name: '',
+	# 	hometown: ', CA', 
+	# 	power_source: '',
+	# 	flame_effects: false,
+	# 	street_legal: false,
+	# 	photo_url: ''
+	# }
+])
