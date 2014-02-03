@@ -11,20 +11,17 @@
 		<%= f.text_field :hometown %>
 	</div>
 
-	<div>
-		<%= f.label :power_source %><br />
-		<%= f.select :power_source, ['Gasoline', 'Diesel', 'Electric', 'Natural Gas', 'other'], prompt: true %>
-	</div>
+<!-- ['Gasoline', 'Diesel', 'Electric', 'Natural Gas', 'other'] -->
 
-	<div>
-		<%= f.label :flame_effects %><br />
-		<%= f.check_box :flame_effects %>
-	</div>
 
-	<div>
-		<%= f.label :street_legal %><br />
-		<%= f.check_box :street_legal %>
-	</div>
+	<fieldset>
+		<div>
+			<%= f.label :street_legal, 'yes' %>
+			<%= f.radio_button :street_legal, 1 %><br />
+			<%= f.label :street_legal, 'no' %>
+			<%= f.radio_button :street_legal, 0 %>
+		</div>
+	</fieldset>
 
 	<div>
 		<%= f.label :photo_url %><br />

@@ -1,8 +1,8 @@
 BurningMan::Application.routes.draw do
   get "art_cars" => "art_cars#index", :as => :art_cars
+  post "art_cars" => "art_cars#create"
   get "art_cars/new" => "art_cars#new", :as => :new_art_car
   get "art_cars/:id" => "art_cars#show", :as => :art_car
-  post "art_cars" => "art_cars#create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

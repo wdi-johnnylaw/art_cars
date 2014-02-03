@@ -25,7 +25,7 @@ ArtCar.create([
 	},
 	{
 		name: 'Pirate Ship',
-		hometown: 'Porland, OR', 
+		hometown: 'Portland, OR', 
 		power_source: 'Gasoline',
 		flame_effects: true,
 		street_legal: true,
