@@ -1,0 +1,17 @@
+<%= link_to 'Back to index', action: 'index' %>
+<h1><%= @art_car.name %></h1>
+
+<dt>Hometown</dt>
+<tt><%= @art_car.hometown %></tt>
+
+<dt>Power source</dt>
+<tt><%= @art_car.power_source %></tt>
+
+<dt>Flame effects</dt>
+<tt><%= @art_car.flame_effects ? 'Yes' : 'No' %></tt>
+
+<dt>Street legal</dt>
+<tt><%= @art_car.street_legal ? 'Yes' : 'No' %></tt>
+
+<dt>Photo</dt>
+<tt><%= image_tag @art_car.photo_url %></tt>

@@ -1,0 +1,27 @@
+<h1>ArtCars</h1>
+<table id="art-car-table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Hometown</th>
+			<th>Power source</th>
+			<th>Flame effects</th>
+			<th>Street legal</th>
+			<th>Thumbnail</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @art_cars.each do |art_car| %>
+			<tr>
+				<td><%= link_to art_car.name, art_car %></td>
+				<td><%= art_car.hometown %></td>
+				<td><%= art_car.power_source %></td>
+				<td><%= art_car.flame_effects ? 'Yes' : 'No' %></td>
+				<td><%= art_car.street_legal ? 'Yes' : 'No' %></td>
+				<td><%= image_tag art_car.photo_url %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<%= link_to "Add art car", new_art_car_path %>

@@ -1,0 +1,25 @@
+// Place all the styles related to the art_cars controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table#art-car-table {
+	width: 700px;
+	
+	th {
+		padding: 10px;
+	}
+
+	td {
+		padding: 0 10px;
+	}
+}
+
+tt, dt {
+	font-family: inherit;
+	display: block;
+}
+
+tt {
+	font-family: bold;
+	margin-bottom: 1em;
+}
