@@ -23,12 +23,12 @@ ArtCar.create([
 		street_legal: false,
 		photo_url: 'nautilus.jpg'
 	},
-	# {
-	# 	name: '',
-	# 	hometown: ', CA', 
-	# 	power_source: '',
-	# 	flame_effects: false,
-	# 	street_legal: false,
-	# 	photo_url: ''
-	# }
+	{
+		name: 'Pirate Ship',
+		hometown: 'Porland, OR', 
+		power_source: 'Gasoline',
+		flame_effects: true,
+		street_legal: true,
+		photo_url: 'pirate.jpg'
+	}
 ])

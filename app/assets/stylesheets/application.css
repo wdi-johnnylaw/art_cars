@@ -12,4 +12,15 @@
  *= require_tree .
  */
 
+html {
+	background: url(/assets/temple.jpg) no-repeat;
+	background-size: 100%;
+}
+
+body { 
+	width: 880px;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.8);
+}
+
 .notice { color: green; }

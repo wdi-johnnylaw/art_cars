@@ -18,7 +18,7 @@
 				<td><%= art_car.power_source %></td>
 				<td><%= art_car.flame_effects ? 'Yes' : 'No' %></td>
 				<td><%= art_car.street_legal ? 'Yes' : 'No' %></td>
-				<td><%= image_tag art_car.photo_url %></td>
+				<td><%= image_tag(art_car.photo_url, size: '160x120') %></td>
 			</tr>
 		<% end %>
 	</tbody>

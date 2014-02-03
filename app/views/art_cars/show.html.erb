@@ -2,16 +2,16 @@
 <h1><%= @art_car.name %></h1>
 
 <dt>Hometown</dt>
-<tt><%= @art_car.hometown %></tt>
+<dd><%= @art_car.hometown %></dd>
 
 <dt>Power source</dt>
-<tt><%= @art_car.power_source %></tt>
+<dd><%= @art_car.power_source %></dd>
 
 <dt>Flame effects</dt>
-<tt><%= @art_car.flame_effects ? 'Yes' : 'No' %></tt>
+<dd><%= @art_car.flame_effects ? 'Yes' : 'No' %></dd>
 
 <dt>Street legal</dt>
-<tt><%= @art_car.street_legal ? 'Yes' : 'No' %></tt>
+<dd><%= @art_car.street_legal ? 'Yes' : 'No' %></dd>
 
 <dt>Photo</dt>
-<tt><%= image_tag @art_car.photo_url %></tt>
+<dd><%= image_tag @art_car.photo_url, size: '800x600' %></dd>
