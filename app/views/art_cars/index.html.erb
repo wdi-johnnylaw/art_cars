@@ -20,7 +20,9 @@
 				<td><%= art_car.street_legal ? 'Yes' : 'No' %></td>
 				<td><%= image_tag(art_car.photo_url, size: '160x120') %></td>
 				<td><%= link_to "Edit", edit_art_car_path(art_car)%></td>
-				<td><%= button_to "X", art_car_path(art_car), {method: :delete, confirm: "Dude are you sure????"}%></td>
+				<% if current_user %>
+					<td><%= button_to "Delete", art_car_path(art_car), {method: :delete, confirm: "Dude are you sure????"}%></td>
+				<% end %>
 			</tr>
 		<% end %>
 	</tbody>

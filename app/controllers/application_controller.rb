@@ -6,6 +6,15 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def current_user
-  	session[:user_id] && User.find_by(id: session[:user_id])
+  	if session[:user_id]
+  		User.find_by(id: session[:user_id]) rescue nil
+  	end
+  end
+
+  def login_required
+  	unless current_user
+  		flash[:error] = "You must be logged in to do that!"
+  		redirect_to root_path
+  	end
   end
 end

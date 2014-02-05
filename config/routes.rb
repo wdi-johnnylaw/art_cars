@@ -2,6 +2,8 @@ BurningMan::Application.routes.draw do
   resources :art_cars, only: [:index, :show, :create, :new, :edit, :update, :destroy]
   resources :users, only: [:index, :new]
   resource :auth, only: [:new, :create, :destroy]
+
+  root to: 'art_cars#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
