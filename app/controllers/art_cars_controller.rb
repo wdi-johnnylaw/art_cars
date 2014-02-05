@@ -20,6 +20,17 @@ class ArtCarsController < ApplicationController
   	end
   end
 
+  def update
+    @art_car = ArtCar.find(params[:id])
+
+    if @art_car.update art_car_params
+      flash[:notice] = "Successfully updated art car!"
+      redirect_to action: 'index'
+    else
+      render action: 'new'
+    end
+  end
+
   def new
   	@art_car = ArtCar.new
   end
