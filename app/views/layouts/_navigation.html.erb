@@ -2,6 +2,7 @@
 	Logged in as <%= current_user.username %> | 
 	<%= link_to 'Log out', auth_path, method: 'delete' %>
 <% else %>
-	<%= link_to 'Log in', new_auth_path %>
+	<%= link_to 'Log in', new_auth_path %> |
+	<%= link_to 'Sign up', new_user_path %>
 
 <% end %>

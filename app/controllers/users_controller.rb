@@ -9,6 +9,6 @@ class UsersController < ApplicationController
 
 	def create
 		User.create(params.require(:user).permit(:username, :password))
-		redirect_to action: 'index'
+		redirect_to root_path
 	end
 end

@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+ArtCar.destroy_all
+
 ArtCar.create([
 	{ 
 		name: 'Pyrobar', 
@@ -30,5 +32,14 @@ ArtCar.create([
 		flame_effects: true,
 		street_legal: true,
 		photo_url: 'pirate.jpg'
+	},
+	{
+		name: 'Cupcakes',
+		hometown: 'San Francisco, CA', 
+		power_source: 'Gasoline',
+		flame_effects: false,
+		street_legal: false,
+		photo_url: 'cupcake.jpg'
 	}
+
 ])

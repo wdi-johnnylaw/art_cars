@@ -17,4 +17,6 @@
 	</tbody>
 </table>
 
-<%= link_to "Add art car", new_art_car_path %>
+<% if current_user %>
+	<%= link_to "Add art car", new_art_car_path %>
+<% end %>

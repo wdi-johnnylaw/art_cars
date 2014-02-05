@@ -25,4 +25,9 @@ body {
 	font-family: Audiowide, cursive;
 }
 
+header {
+	float: right;
+	padding-right: 100px;
+}
+
 .notice { color: green; }

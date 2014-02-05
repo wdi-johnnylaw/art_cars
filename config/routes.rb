@@ -1,6 +1,6 @@
 BurningMan::Application.routes.draw do
   resources :art_cars, only: [:index, :show, :create, :new, :edit, :update, :destroy]
-  resources :users, only: [:index, :new]
+  resources :users, only: [:create, :new]
   resource :auth, only: [:new, :create, :destroy]
 
   root to: 'art_cars#index'

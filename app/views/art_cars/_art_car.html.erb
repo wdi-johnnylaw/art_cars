@@ -5,8 +5,8 @@
 	<td><%= art_car.flame_effects ? 'yes' : 'no' %></td>
 	<td><%= art_car.street_legal ? 'yes' : 'no' %></td>
 	<td><%= image_tag(art_car.photo_url, size: '120x90') %></td>
-	<td><%= link_to "Edit", edit_art_car_path(art_car)%></td>
 	<% if current_user %>
+		<td><%= link_to "Edit", edit_art_car_path(art_car)%></td>
 		<td><%= button_to "Delete", art_car_path(art_car), {method: :delete, confirm: "Dude are you sure????"}%></td>
 	<% end %>
 </tr>
