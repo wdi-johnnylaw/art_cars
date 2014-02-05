@@ -3,11 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 table#art-car-table {
-	width: 700px;
+	width: 800px;
+	border-collapse: collapse;
+	border-left: 1px solid #888;
+	margin-bottom: 20px;
 	
+	thead {
+		tr {
+			border-bottom: 1px solid #888;
+		}
+	}
+
 	th {
 		padding: 10px;
 		text-align: left;
+	}
+
+	tr.even {
+		background-color: #bbb;
 	}
 
 	td {

@@ -21,6 +21,8 @@ body {
 	width: 880px;
 	margin: auto;
 	background: rgba(255, 255, 255, 0.8);
+	padding: 15px 30px;
+	font-family: Audiowide, cursive;
 }
 
 .notice { color: green; }
