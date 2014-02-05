@@ -12,6 +12,20 @@ table#art-car-table {
 
 	td {
 		padding: 0 10px;
+
+		&.flame {
+			&.yes {
+				background: url(/assets/flame-icon.png) no-repeat center center;
+				background-size: 40%;
+			}
+		}
+
+		&.street {
+			&.yes {
+				background: url(/assets/roadway-icon.png) no-repeat center center;
+				background-size: 60%;
+			}
+		}
 	}
 }
 
