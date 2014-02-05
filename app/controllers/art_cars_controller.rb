@@ -1,4 +1,6 @@
 class ArtCarsController < ApplicationController
+  before_filter :require_login, only: [:destroy]
+
   def index
   	@art_cars = ArtCar.all
   end
@@ -20,6 +22,16 @@ class ArtCarsController < ApplicationController
 
   def new
   	@art_car = ArtCar.new
+  end
+
+  def edit
+  	@art_car = ArtCar.find(params[:id])
+  end
+
+  def destroy
+  	ac = ArtCar.find(params[:id])
+  	ac.destroy
+		redirect_to art_cars_path
   end
 
   private
