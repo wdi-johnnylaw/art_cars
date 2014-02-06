@@ -1,7 +1,10 @@
 BurningMan::Application.routes.draw do
   resources :art_cars, only: [:index, :show, :create, :new, :edit, :update, :destroy]
   resources :users, only: [:create, :new]
-  resource :auth, only: [:new, :create, :destroy]
+  resource :auth, only: [:create]
+
+  get 'sign_in' => 'auths#new', as: 'login'
+  delete 'sign_out' => 'auths#destroy', as: 'logout'
 
   root to: 'art_cars#index'
   # The priority is based upon order of creation: first created -> highest priority.
