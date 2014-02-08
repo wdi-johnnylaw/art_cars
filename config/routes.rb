@@ -3,10 +3,11 @@ BurningMan::Application.routes.draw do
   resources :users, only: [:create, :new]
   resource :auth, only: [:create]
 
-  get 'sign_in' => 'auths#new', as: 'login'
-  delete 'sign_out' => 'auths#destroy', as: 'logout'
+  get 'log_in' => 'auths#new', as: :login
+  delete 'log_out' => 'auths#destroy', as: :logout
 
   root to: 'art_cars#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
