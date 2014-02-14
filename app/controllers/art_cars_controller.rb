@@ -1,5 +1,5 @@
 class ArtCarsController < ApplicationController
-  before_filter :login_required, only: [:destroy]
+  before_filter :login_required, except: [:index, :show]
 
   def index
   	@art_cars = ArtCar.all
