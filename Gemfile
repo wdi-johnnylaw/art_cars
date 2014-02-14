@@ -2,9 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
-# gem 'mongoid'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -19,6 +17,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'carrierwave'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+	gem 'pry'
 end
 
 # Use ActiveModel has_secure_password
