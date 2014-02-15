@@ -6,7 +6,7 @@ class AuthsController < ApplicationController
 	def create
 		user = User.where(username: params[:user][:username]).first
 		if user && user.authenticates_with_password?(params[:user][:password])
-			session[:user_id] = user.id
+			log_user_in(user)
 			flash[:notice] = "Welcome, #{current_user.username}!"
 			redirect_to session.delete(:redirect_params) || art_cars_path
 		end

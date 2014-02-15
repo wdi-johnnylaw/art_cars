@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
   	end
   end
 
+  def log_user_in(user)
+    session[:user_id] = user.id
+  end
+
   def login_required
   	unless current_user
       flash[:error] = "You must be logged in to do that!"
