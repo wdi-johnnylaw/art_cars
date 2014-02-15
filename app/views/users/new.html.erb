@@ -7,6 +7,7 @@
 	<%=form_for @user do |user|%>
 		<%=user.text_field :username, :placeholder => "Enter your username"%><br>
 		<%=user.password_field :password, :placeholder => "Enter password" %><br>
+		<%=user.password_field :password_confirmation, :placeholder => "Enter password again" %><br>
 	<%= user.submit "Create New User" %>
 	<% end %>
 </div>
