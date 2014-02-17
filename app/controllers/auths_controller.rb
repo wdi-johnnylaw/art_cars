@@ -8,7 +8,7 @@ class AuthsController < ApplicationController
 		if user && user.authenticates_with_password?(params[:user][:password])
 			log_user_in(user)
 			flash[:notice] = "Welcome, #{current_user.username}!"
-			redirect_to session.delete(:redirect_params) || art_cars_path
+			redirect_to art_cars_path
 		end
 	end
 
