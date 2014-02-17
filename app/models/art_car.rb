@@ -1,5 +1,7 @@
 class ArtCar
   include Mongoid::Document
+  include Mongoid::Paperclip
+
   field :name, type: String
   field :hometown, type: String
   field :power_source, type: String
